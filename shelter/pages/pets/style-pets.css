@@ -1,15 +1,22 @@
-@charset "UTF-8";
 @font-face {
-  font-family: "Roboto";
+  font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
-  /* Браузер сначала попробует найти шрифт локально */
-  src: local("Roboto"), url("/fonts/roboto.woff2") format("woff2"), url("/fonts/roboto.woff") format("woff");
+  src: local("Arial"), url("../fonts/arial-regular.woff2") format("woff2"), url("../fonts/arial-regular.woff") format("woff"), url("../fonts/arial-regular.ttf") format("ttf"), url("../fonts/arial-regular.otf") format("otf");
 }
 
-/* Теперь можно использовать шрифт */
-body {
-  font-family: "Roboto", "Arial", sans-serif;
+@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Georgia"), url("../fonts/georgia-regular.woff2") format("woff2"), url("../fonts/georgia-regular.woff") format("woff"), url("../fonts/georgia-regular.ttf") format("ttf"), url("../fonts/georgia-regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: 'Georgia';
+  font-style: bold;
+  font-weight: 700;
+  src: local("Georgia"), url("../fonts/georgia-bold.woff2") format("woff2"), url("../fonts/georgia-bold.woff") format("woff"), url("../fonts/georgia-bold.ttf") format("ttf"), url("../fonts/georgia-bold.otf") format("otf");
 }
 
 /* Document
