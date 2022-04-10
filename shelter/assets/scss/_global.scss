@@ -19,6 +19,7 @@ p {
 
 .section {
     @include flex-container;
+    padding: 80px 0 100px
 }
 
 .title {

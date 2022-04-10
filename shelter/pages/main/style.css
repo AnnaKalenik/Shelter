@@ -130,6 +130,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 80px 0 100px;
 }
 
 .title {
@@ -320,4 +321,100 @@ p {
 
 .description__text {
   margin-top: 25px;
+}
+
+.help {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 45px;
+}
+
+.help__title {
+  text-align: center;
+}
+
+.help__box-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.help__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 60px 55px;
+}
+
+.help__img {
+  width: 60px;
+  height: 60px;
+  background-position: center;
+}
+
+.help__img_img1 {
+  background-image: url("../../assets/icons/icon-pet-food.svg");
+}
+
+.help__img_img2 {
+  background-image: url("../../assets/icons/icon-transportation.svg");
+}
+
+.help__img_img3 {
+  background-image: url("../../assets/icons/icon-toys.svg");
+}
+
+.help__img_img4 {
+  background-image: url("../../assets/icons/icon-bowls-and-cups.svg");
+}
+
+.help__img_img5 {
+  background-image: url("../../assets/icons/icon-shampoos.svg");
+}
+
+.help__img_img6 {
+  background-image: url("../../assets/icons/icon-vitamins.svg");
+}
+
+.help__img_img7 {
+  background-image: url("../../assets/icons/icon-medicines.svg");
+}
+
+.help__img_img8 {
+  background-image: url("../../assets/icons/icon-collars-leashes.svg");
+}
+
+.help__img_img9 {
+  background-image: url("../../assets/icons/icon-sleeping-area.svg");
+}
+
+.help__subtitle {
+  font-size: 20px;
+  line-height: 115%;
+  padding: 0;
+  margin-top: 30px;
 }
