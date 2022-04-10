@@ -1,0 +1,82 @@
+body {
+    font: 400 16px 'Georgia', 'Times New Roman', 'Times', serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.header {
+    padding-top: 60px;
+
+    &__container {
+        @include flex-container($jus: stretch);
+    }
+
+    &__logo-wrapper {
+        @include flex-container($dir: column);
+    }
+
+    &__logo-title {
+        font-size: 32px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+        color: $color-bg-btn-normal;
+        margin-bottom: 10px;
+    }
+
+    &__logo-subtitle {
+        @include font-arial($size: 13px);
+        color: $color-white;
+    }
+
+    // &__nav {
+    // }
+
+    // &__hamburger {
+    // }
+}
+
+.nav {
+    margin-left: auto;
+
+    &__list {
+        @include flex-container;
+    }
+
+    &__item {
+        font-size: 15px;
+        letter-spacing: 0.006em;
+        margin: 0 0 5px 35px;
+    }
+
+    &__link {
+        @include font-arial;
+        color: $color-gray-normal;
+        padding-bottom: 4px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            color: $color-gray-hover_modal-card; 
+        }
+        &:active {
+            color: $color-gray-hover_modal-card;
+            border-bottom: 3px solid $color-bg-btn-normal;
+        }
+    }
+}
+
+// .hamburger {
+//     &__line {
+//         &_line1 {
+//         }
+
+//         &_line2 {
+//         }
+
+//         &_line3 {
+//         }
+//     }
+// }

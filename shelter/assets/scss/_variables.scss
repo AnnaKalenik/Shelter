@@ -1,4 +1,4 @@
-
+//color variables
 $color-white: #FFFFFF;
 $color-dark: #292929;
 $color-gray-normal: #CDCDCD;
@@ -8,10 +8,8 @@ $color-text-title: #545454;
 $color-text-paragraph: #4C4C4C;
 $color-text-legal-inform: #B2B2B2;
 
-
 $color-bg-gradient: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
 $color-bg-section-dark: #211F20;
-
 
 $color-bg-section: #F6F6F6;
 $color-bg-btn-normal: #F1CDB3;
@@ -20,3 +18,16 @@ $color-bg-btn-active: #F1CDB3;
 
 $color-text-modal-black: #000000;
 $color-bg-modal-around: rgba(41, 41, 41, 0.6);
+
+
+@mixin font-arial($size: 15px) {
+    font:  400 $size 'Arial', sans-serif;
+}
+
+//mixins
+@mixin flex-container($dir: row, $jus: center, $ali: center) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $ali;
+}
