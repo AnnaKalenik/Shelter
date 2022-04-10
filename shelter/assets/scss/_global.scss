@@ -7,6 +7,10 @@ p {
     line-height: 160%;
 }
 
+.header, .gradient, .footer {
+    background-image: $color-bg-gradient;
+}
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
