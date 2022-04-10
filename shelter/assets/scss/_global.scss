@@ -13,13 +13,14 @@ p {
     padding: 0 40px;
 }
 
-// .section {
-//     padding: 70px 0 100px;
-// }
+.section {
+    @include flex-container;
+}
 
-// .title {
-//     @include style-title;
-// }
+.title {
+    @include style-title;
+    letter-spacing: 0.06em;
+}
 
 .btn {
     font-size: 17px;

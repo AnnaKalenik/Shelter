@@ -109,6 +109,30 @@ p {
   padding: 0 40px;
 }
 
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  font-size: 35px;
+  color: #545454;
+  line-height: 130%;
+  padding-bottom: 60px;
+  letter-spacing: 0.06em;
+}
+
 .btn {
   font-size: 17px;
   letter-spacing: 0.06em;
@@ -271,4 +295,20 @@ p {
 .hero__right {
   width: 100%;
   height: 100%;
+}
+
+.about {
+  padding: 80px 175px 100px;
+}
+
+.about__img {
+  margin-right: 120px;
+}
+
+.description__title {
+  padding-bottom: 0;
+}
+
+.description__text {
+  margin-top: 25px;
 }
