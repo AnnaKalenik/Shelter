@@ -20,11 +20,18 @@ $color-text-modal-black: #000000;
 $color-bg-modal-around: rgba(41, 41, 41, 0.6);
 
 
+//mixins
 @mixin font-arial($size: 15px) {
     font:  400 $size 'Arial', sans-serif;
 }
 
-//mixins
+@mixin style-title($size: 35px, $color: #{$color-text-title}, $pad: 60px) {
+    font-size: $size;
+    color: $color;
+    line-height: 130%;
+    padding-bottom: $pad;
+}
+
 @mixin flex-container($dir: row, $jus: center, $ali: center) {
     display: flex;
     flex-direction: $dir;

@@ -3,6 +3,34 @@
 @import'../../assets/scss/_normalize';
 @import'../../assets/scss/_global';
 
+.hero {
+    @include flex-container($jus: stretch);
+
+    &__left {
+        @include flex-container($dir: column, $ali: start);
+        margin-right: 42px;
+    }
+
+    &__title {
+        @include style-title($size: 44px, $color: #{$color-white}, $pad: 42px);
+    }
+
+    &__decription {
+        color: $color-gray-normal;
+        margin-bottom: 42px;
+    }
+
+    &__btn {
+        margin-bottom: 80px;
+    }
+
+    &__right {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
 
 
 
