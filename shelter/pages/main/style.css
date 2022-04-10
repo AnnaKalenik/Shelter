@@ -203,6 +203,7 @@ p {
 
 .header__logo-subtitle {
   font: 400 13px "Arial", sans-serif;
+  letter-spacing: 0.1em;
   color: #FFFFFF;
 }
 
@@ -288,6 +289,7 @@ p {
   color: #FFFFFF;
   line-height: 130%;
   padding-bottom: 42px;
+  letter-spacing: 0;
 }
 
 .hero__decription {

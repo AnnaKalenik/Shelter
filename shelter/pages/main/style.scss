@@ -13,6 +13,7 @@
 
     &__title {
         @include style-title($size: 44px, $color: #{$color-white}, $pad: 42px);
+        letter-spacing: 0;
     }
 
     &__decription {
