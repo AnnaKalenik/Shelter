@@ -49,9 +49,10 @@
     }
 }
 
-// .pets {
-//     height: 877px;
-// }
+.pets {
+    background-color: $color-bg-section;
+    height: 877px;
+}
 
 .help {
     flex-direction: column;
@@ -121,6 +122,63 @@
         margin-top: 30px;
     }
 }
+
+.donation {
+    background-color: $color-bg-section;
+    padding: 80px 143px 100px;
+
+    &__img {
+        margin-right: 30px;
+    }
+
+    &__title {
+        padding-bottom: 18px;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        letter-spacing: 0.06em;
+        color: $color-text-title;
+        margin-bottom: 20px;
+    }
+
+    &__phone {
+        display: inline-block;
+        position: relative;
+        font-size: 20px;
+        line-height: 115%;
+        align-items: center;
+        letter-spacing: 0.06em;
+        color: $color-text-title;
+        background-color: $color-bg-btn-normal;
+        border-radius: 9px;
+        padding: 10px 15px 10px 60px;
+        margin-bottom: 20px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            background-color: $color-bg-btn-hover;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url('../../assets/icons/donation-credit-card.svg');
+            width: 30px;
+            height: 23px;
+            top: 10px;
+            left: 15px;
+        }
+    }
+
+    &__text {
+        font-style: italic;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-text-legal-inform;
+    }
+}
+
 
 
 
