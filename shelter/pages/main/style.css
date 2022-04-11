@@ -101,6 +101,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: 400 16px 'Georgia', 'Times New Roman', 'Times', serif;
 }
@@ -155,6 +159,7 @@ p {
 .btn {
   font-size: 17px;
   letter-spacing: 0.06em;
+  color: #292929;
   background-color: #F1CDB3;
   border: 2px solid #F1CDB3;
   border-radius: 100px;
@@ -165,6 +170,12 @@ p {
 }
 
 .btn:hover {
+  background-color: #FDDCC4;
+  border: 2px solid #FDDCC4;
+}
+
+.btn:active {
+  color: #292929;
   background-color: #FDDCC4;
   border: 2px solid #FDDCC4;
 }
@@ -263,6 +274,11 @@ p {
   border-bottom: 3px solid #F1CDB3;
 }
 
+.first {
+  color: #FAFAFA;
+  border-bottom: 3px solid #F1CDB3;
+}
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,6 +306,10 @@ p {
 
 .footer__title_title2 {
   margin: 0 0 34px -1px;
+}
+
+.footer a {
+  display: block;
 }
 
 .footer__email {

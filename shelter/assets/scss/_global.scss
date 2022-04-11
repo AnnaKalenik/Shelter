@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font: 400 16px 'Georgia', 'Times New Roman', 'Times', serif;
 }
@@ -34,6 +38,7 @@ p {
 .btn {
     font-size: 17px;
     letter-spacing: 0.06em;
+    color: $color-dark;
     background-color: $color-bg-btn-normal;
     border: 2px solid $color-bg-btn-normal;
     border-radius: 100px;
@@ -41,6 +46,12 @@ p {
     transition: all 0.5s ease;
 
     &:hover {
+        background-color: $color-bg-btn-hover;
+        border: 2px solid $color-bg-btn-hover;
+    }
+
+    &:active {
+        color: $color-dark;
         background-color: $color-bg-btn-hover;
         border: 2px solid $color-bg-btn-hover;
     }
@@ -98,13 +109,19 @@ p {
         transition: all 0.4s ease;
 
         &:hover {
-            color: $color-gray-hover_modal-card; 
+            color: $color-gray-hover_modal-card;
         }
+
         &:active {
             color: $color-gray-hover_modal-card;
             border-bottom: 3px solid $color-bg-btn-normal;
         }
     }
+}
+
+.first {
+    color: $color-gray-hover_modal-card;
+    border-bottom: 3px solid $color-bg-btn-normal;
 }
 
 // .hamburger {
@@ -136,6 +153,10 @@ p {
         &_title2 {
             margin: 0 0 34px -1px;
         }
+    }
+
+    a {
+        display: block;
     }
 
     &__email {
