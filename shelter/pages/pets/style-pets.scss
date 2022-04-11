@@ -4,6 +4,9 @@
 @import'../../assets/scss/_global';
 
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding: 30px 0;
     background-image: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 100%);
 
@@ -18,20 +21,26 @@
 
 .nav {
     &__link {
-        color: $color-gray-normal;
+        color: $color-text-title;
 
         &:hover {
-            color: $color-dark;
+            color: #000000;
         }
 
-        &:active {
-            color: $color-dark;
-            border-bottom: 3px solid $color-bg-btn-normal;
-        }
+        // &:active, &:focus {
+        //     color: #000000;
+        //     border-bottom: 3px solid $color-bg-btn-normal;
+        // }
     }
 }
 
+.second {
+    color: #000000;
+    border-bottom: 3px solid $color-bg-btn-normal;
+}
+
 .pets {
+    margin-top: 120.19px;
     &__buttons {
         display: flex;
         margin-top: 30px;
@@ -50,15 +59,6 @@
                 background-repeat: no-repeat;
                 height: 23px;
                 top: 42.20%;
-            }
-        }
-
-        &_left-steps, &_left {
-            border: 2px solid $color-gray-normal;
-
-            &:hover {
-                border: 2px solid $color-gray-normal;
-                background-color: transparent; 
             }
         }
 
@@ -86,6 +86,11 @@
             font-size: 20px;
             background-color: $color-bg-btn-normal;
             margin: 0 20px;
+
+            &:hover {
+                background-color: $color-bg-btn-normal;
+                border: 2px solid $color-bg-btn-normal;
+            }
         }
 
         &_right {
@@ -116,5 +121,15 @@
 .wrapper {
     &__item {
        margin-bottom: 30px;
+    }
+}
+
+button[data-disabled] {
+    border: 2px solid $color-gray-normal;
+    cursor: default;
+
+    &:hover {
+        border: 2px solid $color-gray-normal;
+        background-color: transparent; 
     }
 }

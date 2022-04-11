@@ -269,11 +269,6 @@ p {
   color: #FAFAFA;
 }
 
-.nav__link:active {
-  color: #FAFAFA;
-  border-bottom: 3px solid #F1CDB3;
-}
-
 .first {
   color: #FAFAFA;
   border-bottom: 3px solid #F1CDB3;

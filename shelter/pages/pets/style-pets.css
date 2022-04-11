@@ -260,18 +260,13 @@ p {
   font: 400 15px "Arial", sans-serif;
   color: #CDCDCD;
   padding-bottom: 4px;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav__link:hover {
   color: #FAFAFA;
-}
-
-.nav__link:active {
-  color: #FAFAFA;
-  border-bottom: 3px solid #F1CDB3;
 }
 
 .first {
@@ -469,6 +464,9 @@ p {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 30px 0;
   background-image: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#FFFFFF));
   background-image: -webkit-linear-gradient(left, #FFFFFF 0%, #FFFFFF 100%);
@@ -485,16 +483,20 @@ p {
 }
 
 .nav__link {
-  color: #CDCDCD;
+  color: #545454;
 }
 
 .nav__link:hover {
-  color: #292929;
+  color: #000000;
 }
 
-.nav__link:active {
-  color: #292929;
+.second {
+  color: #000000;
   border-bottom: 3px solid #F1CDB3;
+}
+
+.pets {
+  margin-top: 120.19px;
 }
 
 .pets__buttons {
@@ -519,15 +521,6 @@ p {
   background-repeat: no-repeat;
   height: 23px;
   top: 42.20%;
-}
-
-.pets__btn-dir_left-steps, .pets__btn-dir_left {
-  border: 2px solid #CDCDCD;
-}
-
-.pets__btn-dir_left-steps:hover, .pets__btn-dir_left:hover {
-  border: 2px solid #CDCDCD;
-  background-color: transparent;
 }
 
 .pets__btn-dir_left-steps::before {
@@ -567,6 +560,11 @@ p {
   margin: 0 20px;
 }
 
+.pets__btn-dir_current:hover {
+  background-color: #F1CDB3;
+  border: 2px solid #F1CDB3;
+}
+
 .pets__btn-dir_right {
   margin-right: 20px;
 }
@@ -591,4 +589,14 @@ p {
 
 .wrapper__item {
   margin-bottom: 30px;
+}
+
+button[data-disabled] {
+  border: 2px solid #CDCDCD;
+  cursor: default;
+}
+
+button[data-disabled]:hover {
+  border: 2px solid #CDCDCD;
+  background-color: transparent;
 }
