@@ -20,6 +20,13 @@
   src: local("Georgia"), url("../fonts/georgia-bold.woff2") format("woff2"), url("../fonts/georgia-bold.woff") format("woff"), url("../fonts/georgia-bold.ttf") format("ttf"), url("../fonts/georgia-bold.otf") format("otf");
 }
 
+.footer__email, .footer__phone, .footer__location1, .footer__location2 {
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+}
+
 /*Обнуление*/
 * {
   padding: 0;
@@ -250,6 +257,107 @@ p {
 .nav__link:active {
   color: #FAFAFA;
   border-bottom: 3px solid #F1CDB3;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__title {
+  color: #FFFFFF;
+  padding: 56px 0 0;
+}
+
+.footer__title_title1 {
+  margin-bottom: 40px;
+}
+
+.footer__title_title2 {
+  margin: 0 0 34px -1px;
+}
+
+.footer__email {
+  padding: 10px 0 4px 60px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer__email::before {
+  content: '';
+  position: absolute;
+  background-image: url("../../assets/icons/icon-email.svg");
+  width: 40px;
+  height: 32px;
+  top: 5px;
+  left: 0px;
+}
+
+.footer__phone {
+  padding: 5px 0 4px 60px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.footer__phone::before {
+  content: '';
+  position: absolute;
+  background-image: url("../../assets/icons/icon-phone.svg");
+  width: 40px;
+  height: 32px;
+  top: 0px;
+  left: 0px;
+}
+
+.footer__column2 {
+  margin-right: 5px;
+}
+
+.footer__location1 {
+  padding: 0px 0 4px 39px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.footer__location1::before {
+  content: '';
+  position: absolute;
+  background-image: url("../../assets/icons/icon-marker.svg");
+  width: 22px;
+  height: 32px;
+  top: 5px;
+  left: -3px;
+}
+
+.footer__location2 {
+  padding: 0px 0 4px 40px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.footer__location2::before {
+  content: '';
+  position: absolute;
+  background-image: url("../../assets/icons/icon-marker.svg");
+  width: 22px;
+  height: 32px;
+  top: -5px;
+  left: -3px;
+}
+
+.footer__img {
+  padding-top: 40px;
 }
 
 .hero {

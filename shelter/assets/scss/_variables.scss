@@ -38,3 +38,10 @@ $color-bg-modal-around: rgba(41, 41, 41, 0.6);
     justify-content: $jus;
     align-items: $ali;
 }
+
+%footer-contacts-style {
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-bg-btn-normal;
+}
