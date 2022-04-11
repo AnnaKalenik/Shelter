@@ -3,3 +3,118 @@
 @import'../../assets/scss/_normalize';
 @import'../../assets/scss/_global';
 
+.header {
+    padding: 30px 0;
+    background-image: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 100%);
+
+    &__logo-title {
+        color: $color-text-title;
+    }
+
+    &__logo-subtitle {
+        color: $color-dark;
+    }
+}
+
+.nav {
+    &__link {
+        color: $color-gray-normal;
+
+        &:hover {
+            color: $color-dark;
+        }
+
+        &:active {
+            color: $color-dark;
+            border-bottom: 3px solid $color-bg-btn-normal;
+        }
+    }
+}
+
+.pets {
+    &__buttons {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    &__btn-dir {
+        padding: 24px;
+        background-color: transparent;
+
+        &_left-steps, &_left, &_right, &_right-steps {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-repeat: no-repeat;
+                height: 23px;
+                top: 42.20%;
+            }
+        }
+
+        &_left-steps, &_left {
+            border: 2px solid $color-gray-normal;
+
+            &:hover {
+                border: 2px solid $color-gray-normal;
+                background-color: transparent; 
+            }
+        }
+
+        &_left-steps {
+            &::before {
+                background-image: url('../../assets/icons/left-steps.svg');
+                width: 27px;
+                left: 22.54%;
+            }
+        }
+
+        &_left {
+            margin-left: 20px;
+            &::before {
+                background-image: url('../../assets/icons/left.svg');
+                width: 13px;
+                left: 38.54%;
+            }
+        }
+
+        &_current {
+            @include flex-container;
+            width: 32px;
+            height: 32px;
+            font-size: 20px;
+            background-color: $color-bg-btn-normal;
+            margin: 0 20px;
+        }
+
+        &_right {
+            margin-right: 20px;
+            &::before {
+                background-image: url('../../assets/icons/right.svg');
+                width: 13px;
+                left: 38.54%;
+            }
+        }
+
+        &_right-steps {
+            &::before {
+                background-image: url('../../assets/icons/right-steps.svg');
+                width: 27px;
+                left: 22.54%;
+            }
+        }
+
+        &__icon {
+            position: absolute;
+            top: auto;
+            left: auto;
+        }
+    }
+}
+
+.wrapper {
+    &__item {
+       margin-bottom: 30px;
+    }
+}
