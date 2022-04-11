@@ -54,8 +54,6 @@
 }
 
 .pets {
-    background-color: $color-bg-section;
-
     &__title {
         text-align: center;
     }
@@ -210,8 +208,8 @@
     }
 }
 
+
 .donation {
-    background-color: $color-bg-section;
     padding: 80px 143px 100px;
 
     &__img {

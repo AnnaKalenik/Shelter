@@ -140,6 +140,10 @@ p {
   padding: 80px 0 100px;
 }
 
+.bakcground {
+  background-color: #F6F6F6;
+}
+
 .title {
   font-size: 35px;
   color: #545454;
@@ -447,10 +451,6 @@ p {
           align-items: center;
 }
 
-.pets {
-  background-color: #F6F6F6;
-}
-
 .pets__title {
   text-align: center;
 }
@@ -660,7 +660,6 @@ p {
 }
 
 .donation {
-  background-color: #F6F6F6;
   padding: 80px 143px 100px;
 }
 
