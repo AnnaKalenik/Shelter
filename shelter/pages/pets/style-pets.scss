@@ -90,6 +90,7 @@
             &:hover {
                 background-color: $color-bg-btn-normal;
                 border: 2px solid $color-bg-btn-normal;
+                cursor: default;
             }
         }
 

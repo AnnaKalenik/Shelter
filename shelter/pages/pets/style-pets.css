@@ -563,6 +563,7 @@ p {
 .pets__btn-dir_current:hover {
   background-color: #F1CDB3;
   border: 2px solid #F1CDB3;
+  cursor: default;
 }
 
 .pets__btn-dir_right {
