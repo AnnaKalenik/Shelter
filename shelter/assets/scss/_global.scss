@@ -11,8 +11,20 @@ p {
     line-height: 160%;
 }
 
-.header, .gradient, .footer {
-    background-image: $color-bg-gradient;
+.header, .gradient {
+    background-image: url('../../assets/images/start-screen-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gradient {
+    background-position-y: -180.19px;
+}
+
+ .footer {
+    background-image: url('../../assets/images/footer-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {

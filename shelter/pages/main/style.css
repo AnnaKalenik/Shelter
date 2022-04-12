@@ -114,11 +114,20 @@ p {
   line-height: 160%;
 }
 
-.header, .gradient, .footer {
-  background-image: -webkit-gradient(linear, left top, right top, from(#5B483A), color-stop(50%, #2B2624), to(#222021));
-  background-image: -webkit-linear-gradient(left, #5B483A 0%, #2B2624 50%, #222021 100%);
-  background-image: -o-linear-gradient(left, #5B483A 0%, #2B2624 50%, #222021 100%);
-  background-image: linear-gradient(to right, #5B483A 0%, #2B2624 50%, #222021 100%);
+.header, .gradient {
+  background-image: url("../../assets/images/start-screen-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gradient {
+  background-position-y: -180.19px;
+}
+
+.footer {
+  background-image: url("../../assets/images/footer-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -260,9 +269,9 @@ p {
   font: 400 15px "Arial", sans-serif;
   color: #CDCDCD;
   padding-bottom: 4px;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav__link:hover {
