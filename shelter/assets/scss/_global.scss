@@ -15,22 +15,34 @@ p {
     background-image: url('../../assets/images/start-screen-background.png');
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 990px) {
+        background-image: url('../../assets/images/start-screen-background-990.png');
+    }
 }
 
 .gradient {
     background-position-y: -180.19px;
+    @media (max-width: 990px) {
+        background-position-y: -150.19px;
+    }
 }
 
  .footer {
     background-image: url('../../assets/images/footer-background.png');
     background-repeat: no-repeat;
     background-size: cover;
+    @media (max-width: 976px) {
+        background-image: url('../../assets/images/footer-background-976.png');
+    }
 }
 
 .container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 40px;
+    @media (max-width: 1279px) {
+        padding: 0 30px;
+    }
 }
 
 .section {
@@ -73,7 +85,7 @@ p {
     padding: 60px 0;
 
     &__container {
-        @include flex-container($jus: stretch);
+        @include flex-container($jus: stretch); 
     }
 
     &__logo-wrapper {
@@ -99,6 +111,10 @@ p {
 
     // &__hamburger {
     // }
+
+    @media (max-width: 1279px) {
+        padding-top: 30px;
+    }
 }
 
 .nav {
@@ -194,22 +210,23 @@ p {
         background-color: transparent;
         margin-bottom: 30px;
     }
+
+    @media (max-width: 1130px) {
+        @include flex-container($jus: space-around);
+    }
 }
 
 .footer {
     &__container {
         @include flex-container($jus: space-between);
+        flex-wrap: wrap;
     }
 
     &__title {
         color: $color-white;
         padding: 56px 0 0;
 
-        &_title1 {
-            margin-bottom: 40px;
-        }
-
-        &_title2 {
+        &_title1, &_title2 {
             margin: 0 0 34px -1px;
         }
     }
@@ -292,5 +309,33 @@ p {
 
     &__img {
         padding-top: 40px;
+    }
+
+    @media (max-width: 1010px) {
+        &__container {
+            @include flex-container($jus: space-evenly);
+            flex-wrap: wrap;
+        }    
+        &__title {
+            padding: 30px 0 0;
+        }
+        &__phone, &__location2 {
+            margin-bottom: 65px;
+        }
+        &__column1 {
+            margin: 0 2% 0 0;
+        }
+        &__column2 {
+            margin: 0 1.25% 0 2%;
+        }
+        &__img {
+            padding-top: 20px;
+        }
+    }
+
+    @media (max-width: 976px) {
+        &__img {
+            padding-top: 0;
+        }
     }
 }

@@ -9,6 +9,7 @@
     width: 100%;
     padding: 30px 0;
     background-image: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 100%);
+    z-index: 999;
 
     &__logo-title {
         color: $color-text-title;
@@ -39,8 +40,15 @@
     border-bottom: 3px solid $color-bg-btn-normal;
 }
 
+.pets.section {
+    @media (max-width: 1220px) {
+        padding-bottom: 76px;
+    }
+}
+
 .pets {
     margin-top: 120.19px;
+
     &__buttons {
         display: flex;
         margin-top: 30px;
@@ -52,6 +60,7 @@
 
         &_left-steps, &_left, &_right, &_right-steps {
             position: relative;
+            z-index: 0;
 
             &::before {
                 content: '';
@@ -117,11 +126,40 @@
             left: auto;
         }
     }
+
+    @media (max-width: 1220px) {
+        &__title {
+            padding-bottom: 30px;
+        }
+        
+        &__buttons {
+            margin-top: 12px;
+        }
+    }
 }
 
 .wrapper {
     &__item {
        margin-bottom: 30px;
+    }
+
+    @media (max-width: 1220px) {
+        @include flex-container($jus: space-around);
+        &__item {
+            margin: 0 5px 30px;
+        }
+    }
+
+    @media (max-width: 1060px) {
+        padding: 0 6.1% 0;
+    }
+
+    @media (max-width: 899px) {
+        &__item {
+            &_item7, &_item8  {
+                display: none;
+            }
+        }
     }
 }
 
