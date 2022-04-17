@@ -724,15 +724,15 @@ p {
   }
 }
 
-@media (max-width: 1060px) {
-  .wrapper {
-    padding: 0 6.1% 0;
+@media (max-width: 1179px) {
+  .wrapper__item_item7, .wrapper__item_item8 {
+    display: none;
   }
 }
 
-@media (max-width: 899px) {
-  .wrapper__item_item7, .wrapper__item_item8 {
-    display: none;
+@media (max-width: 1060px) {
+  .wrapper {
+    padding: 0 6.1% 0;
   }
 }
 

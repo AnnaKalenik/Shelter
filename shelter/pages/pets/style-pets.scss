@@ -150,16 +150,16 @@
         }
     }
 
-    @media (max-width: 1060px) {
-        padding: 0 6.1% 0;
-    }
-
-    @media (max-width: 899px) {
+    @media (max-width: 1179px) {
         &__item {
             &_item7, &_item8  {
                 display: none;
             }
         }
+    }
+
+    @media (max-width: 1060px) {
+        padding: 0 6.1% 0;
     }
 }
 
