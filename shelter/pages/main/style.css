@@ -248,6 +248,7 @@ p {
 }
 
 .header {
+  position: relative;
   padding: 60px 0;
 }
 
@@ -330,7 +331,6 @@ p {
 }
 
 .nav__item {
-  font-size: 15px;
   letter-spacing: 0.006em;
   margin: 0 0 5px 35px;
 }
@@ -357,6 +357,56 @@ p {
 .first {
   color: #FAFAFA;
   border-bottom: 3px solid #F1CDB3;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 22px;
+  margin-left: auto;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hamburger:hover .hamburger__line {
+  background-color: #FDDCC4;
+}
+
+.hamburger__line {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  border: none;
+  background-color: #F1CDB3;
+}
+
+.hamburger__line_line1 {
+  top: 0;
+  left: 0;
+}
+
+.hamburger__line_line2 {
+  top: 10px;
+  left: 0;
+}
+
+.hamburger__line_line3 {
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger_open {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
 }
 
 .pets.section {

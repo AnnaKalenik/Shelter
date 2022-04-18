@@ -105,11 +105,21 @@ p {
     }
 }
 
+// .shelter {
+//     max-width: 1280px;
+//     margin: 0 auto;
+
+//     @media (max-width: 767px) {
+//         overflow: hidden;        
+//     }
+// }
+
 .header {
+    position: relative;
     padding: 60px 0;
 
     &__container {
-        @include flex-container($jus: stretch); 
+        @include flex-container($jus: stretch);
     }
 
     &__logo-wrapper {
@@ -141,7 +151,7 @@ p {
     }
 
     @media (max-width: 767px) {
-        padding-right: 43px;
+        padding-right: 43px;        
     }
 }
 
@@ -153,7 +163,6 @@ p {
     }
 
     &__item {
-        font-size: 15px;
         letter-spacing: 0.006em;
         margin: 0 0 5px 35px;
     }
@@ -176,7 +185,53 @@ p {
 
     @media (max-width: 767px) {
         display: none;
+        // position: absolute;
+        // top: 0;
+        // right: -85%;
+        // width: 85%;
+        // height: 100vh;
+        // background-color: $color-dark;
+        // padding-top: 249px;
+        // transition: all 0.5s;
+
+        // &_open {
+        //     display: block;
+        //     right: 0;
+        // }
+
+        // &__list {
+        //     @include flex-container($dir: column, $jus: start);
+        //     margin: 0 auto;
+        // }
+
+        // &__item {
+        //     margin: 0 0 43px 0;
+            
+        //     &:nth-child(3) {
+        //         margin: 0 0 40px 0;
+        //     }
+
+        //     &:nth-child(4) {
+        //         margin: 0 0 38px 0;
+        //     }
+        // }
+
+        // &__link {
+        //     @include font-arial($size: 32px);
+        //     line-height: 160%;
+        //     padding-bottom: 7px;
+        // }
     }
+
+    // @media (max-width: 450px) {
+    //     right: -100%;
+    //     width: 100%;
+
+    //     &_open {
+    //         display: block;
+    //         right: 0;
+    //     }
+    // }
 }
 
 .first {
@@ -184,19 +239,50 @@ p {
     border-bottom: 3px solid $color-bg-btn-normal;
 }
 
-// .hamburger {
-//     &__line {
-//         &_line1 {
-//         }
+.hamburger {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 22px;
+    margin-left: auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
 
-//         &_line2 {
-//         }
+    &:hover .hamburger__line {
+        background-color: $color-bg-btn-hover;
+    }
 
-//         &_line3 {
-//         }
-//     }
-// }
+    &__line {
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        border: none;
+        background-color: $color-bg-btn-normal;
+        
+        &_line1 {
+            top: 0;
+            left: 0;
+        }
 
+        &_line2 {
+            top: 10px;
+            left: 0;
+        }
+
+        &_line3 {
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+
+        &_open {
+            transform: rotate(90deg) ;
+        }
+    }
+}
 
 .pets.section {
     @include flex-container($dir: column);
