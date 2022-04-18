@@ -44,6 +44,10 @@
     @media (max-width: 1220px) {
         padding-bottom: 76px;
     }
+
+    @media (max-width: 657px) {
+        padding-bottom: 42px;
+    }
 }
 
 .pets {
@@ -136,6 +140,30 @@
             margin-top: 12px;
         }
     }
+
+    @media (max-width: 657px) {
+        &__title {
+            padding-bottom: 42px;
+        }
+
+        &__buttons {
+            margin-top: 13px;
+        }
+
+        &__btn-dir {
+            &_left {
+                margin-left: 10px;
+            }
+    
+            &_current {
+                margin: 0 10px;
+            }
+    
+            &_right {
+                margin-right: 10px;
+            }
+        }
+    }
 }
 
 .wrapper {
@@ -161,6 +189,14 @@
     @media (max-width: 1060px) {
         padding: 0 6.1% 0;
     }
+
+    @media (max-width: 657px) {
+        &__item {
+            &_item4, &_item5, &_item6   {
+                display: none;
+            }
+        }
+    }
 }
 
 button[data-disabled] {
@@ -169,6 +205,6 @@ button[data-disabled] {
 
     &:hover {
         border: 2px solid $color-gray-normal;
-        background-color: transparent; 
+        background-color: transparent;
     }
 }
