@@ -10,7 +10,7 @@
     width: 100%;
     padding: 30px 0;
     background-image: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 100%);
-    z-index: 999;
+    z-index: 3;
 
     &__logo-title {
         color: $color-text-title;
@@ -23,6 +23,33 @@
     @media (max-width: 767px) {
         padding: 30px 43px 30px 0;
     }
+
+    @media (max-width: 513px) { 
+        &__logo-title {
+            &_open {
+                color: $color-bg-btn-normal;
+            }
+            
+        }
+            
+        &__logo-subtitle {
+            &_open {
+                color: $color-white; 
+            } 
+        }
+    }
+}
+
+@media (max-width: 513px) {
+    .header__logo-wrapper.header__logo-wrapper_open {
+        &__logo-title {
+            color: $color-bg-btn-normal;
+        }
+    
+        &__logo-subtitle {
+            color: $color-white;
+        }
+    }
 }
 
 .nav {
@@ -32,20 +59,26 @@
         &:hover {
             color: #000000;
         }
-
-        // &:active, &:focus {
-        //     color: #000000;
-        //     border-bottom: 3px solid $color-bg-btn-normal;
-        // }
     }
+
     @media (max-width: 767px) {
-        background-color: $color-white;
+        &__link {
+            color: $color-gray-normal;
+
+            &:hover {
+                color: $color-gray-hover_modal-card;
+            }
+        }
     }
 }
 
 .second {
     color: #000000;
     border-bottom: 3px solid $color-bg-btn-normal;
+
+    @media (max-width: 767px) {
+        color: $color-gray-hover_modal-card;
+    }
 }
 
 .pets.section {

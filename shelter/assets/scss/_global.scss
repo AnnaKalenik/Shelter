@@ -105,14 +105,13 @@ p {
     }
 }
 
-// .shelter {
-//     max-width: 1280px;
-//     margin: 0 auto;
-
-//     @media (max-width: 767px) {
-//         overflow: hidden;        
-//     }
-// }
+.shelter {
+    @media (max-width: 767px) {
+        max-width: 767px;
+        margin: 0 auto;
+        overflow: hidden;        
+    }
+}
 
 .header {
     position: relative;
@@ -120,6 +119,7 @@ p {
 
     &__container {
         @include flex-container($jus: stretch);
+        transition: all 0.5ms;
     }
 
     &__logo-wrapper {
@@ -151,7 +151,93 @@ p {
     }
 
     @media (max-width: 767px) {
-        padding-right: 43px;        
+        padding-right: 43px; 
+        &__dark-layer {
+            &_open {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 4;
+                background-color: #29292960;
+            }
+        }
+    }
+
+    @media (max-width: 513px) {
+        &__logo-wrapper {
+            &_open {
+               position: relative;
+               top: 0;
+               left: 43.5%;
+               z-index: 6;
+            }
+        }
+    }
+
+    @media (max-width: 479px) {
+        &__logo-wrapper {
+            &_open {
+               left: 38.5%;
+            }
+        }
+    }
+
+    @media (max-width: 439px) {
+        &__logo-wrapper {
+            &_open {
+               left: 33.5%;
+            }
+        }
+    }
+
+    @media (max-width: 413px) {
+        &__logo-wrapper {
+            &_open {
+               left: 28.5%;
+            }
+        }
+    }
+
+    @media (max-width: 386px) {
+        &__logo-wrapper {
+            &_open {
+               left: 23.5%;
+            }
+        }
+    }
+
+    @media (max-width: 375px) {
+        &__logo-wrapper {
+            &_open {
+               left: 17.5%;
+            }
+        }
+    }
+
+    @media (max-width: 349px) {
+        &__logo-wrapper {
+            &_open {
+               left: 12.5%;
+            }
+        }
+    }
+
+    @media (max-width: 330px) {
+        &__logo-wrapper {
+            &_open {
+               left: 5.5%;
+            }
+        }
+    }
+
+    @media (max-width: 320px) {
+        &__logo-wrapper {
+            &_open {
+               left: 0;
+            }
+        }
     }
 }
 
@@ -184,54 +270,44 @@ p {
     }
 
     @media (max-width: 767px) {
-        display: none;
-        // position: absolute;
-        // top: 0;
-        // right: -85%;
-        // width: 85%;
-        // height: 100vh;
-        // background-color: $color-dark;
-        // padding-top: 249px;
-        // transition: all 0.5s;
+        position: absolute;
+        top: 0;
+        right: -320px;
+        width: 320px;
+        height: 100vh;
+        background-color: $color-dark;
+        padding-top: 249px;
+        z-index: 5;
+        transition: all 0.5s;
 
-        // &_open {
-        //     display: block;
-        //     right: 0;
-        // }
+        &_open {
+            display: block;
+            right: 0;
+        }
 
-        // &__list {
-        //     @include flex-container($dir: column, $jus: start);
-        //     margin: 0 auto;
-        // }
+        &__list {
+            @include flex-container($dir: column, $jus: start);
+            margin: 0 auto;
+        }
 
-        // &__item {
-        //     margin: 0 0 43px 0;
+        &__item {
+            margin: 0 0 43px 0;
+
+            &:nth-child(2) {
+                margin: 0 0 40px 0;
+            }
             
-        //     &:nth-child(3) {
-        //         margin: 0 0 40px 0;
-        //     }
+            &:nth-child(3) {
+                margin: 0 0 40px 0;
+            }
+        }
 
-        //     &:nth-child(4) {
-        //         margin: 0 0 38px 0;
-        //     }
-        // }
-
-        // &__link {
-        //     @include font-arial($size: 32px);
-        //     line-height: 160%;
-        //     padding-bottom: 7px;
-        // }
+        &__link {
+            @include font-arial($size: 32px);
+            line-height: 160%;
+            padding-bottom: 7px;
+        }
     }
-
-    // @media (max-width: 450px) {
-    //     right: -100%;
-    //     width: 100%;
-
-    //     &_open {
-    //         display: block;
-    //         right: 0;
-    //     }
-    // }
 }
 
 .first {
@@ -246,6 +322,7 @@ p {
     height: 22px;
     margin-left: auto;
     transition: all 0.3s ease;
+    z-index: 5;
     cursor: pointer;
 
     &:hover .hamburger__line {
