@@ -23,36 +23,17 @@
     @media (max-width: 767px) {
         padding: 30px 43px 30px 0;
     }
-
-    @media (max-width: 513px) { 
-        &__logo-title {
-            &_open {
-                color: $color-bg-btn-normal;
-            }
-            
-        }
-            
-        &__logo-subtitle {
-            &_open {
-                color: $color-white; 
-            } 
-        }
-    }
-}
-
-@media (max-width: 513px) {
-    .header__logo-wrapper.header__logo-wrapper_open {
-        &__logo-title {
-            color: $color-bg-btn-normal;
-        }
-    
-        &__logo-subtitle {
-            color: $color-white;
-        }
-    }
 }
 
 .nav {
+    &__logo-title {
+        color: $color-bg-btn-normal !important;
+    }
+
+    &__logo-subtitle {
+        color: $color-white;
+    }
+
     &__link {
         color: $color-text-title;
 
