@@ -27,7 +27,7 @@ export default function popup() {
         let pet;
 
         pets.forEach(item => {
-            if (item.name === event.path[0].alt) {
+            if (item.name === event.currentTarget.querySelector('.wrapper__subtitle').innerHTML) {
                 pet = item;
             }
             return pet;
@@ -42,10 +42,6 @@ export default function popup() {
         INOCULATIONS_POPUP.innerHTML = pet.inoculations;
         DISEASES_POPUP.innerHTML = pet.diseases;
         PARASITES_POPUP.innerHTML = pet.parasites;
-
-        // console.log(pet.inoculations);
-        // console.log(pet);
-        // console.log(event.path[0].alt);
     }
     CARD.forEach(item => {item.addEventListener('click', addClassOpen)});
 
