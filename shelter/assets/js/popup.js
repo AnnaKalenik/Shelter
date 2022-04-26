@@ -6,6 +6,7 @@ export default function popup() {
     const DARK_LAYER = document.querySelector('#dark-layer');
     const IMG_POPUP = document.querySelector('#img');
     const NAME_POPUP = document.querySelector('#name');
+    const TYPE_POPUP = document.querySelector('#type');
     const BREED_POPUP = document.querySelector('#breed');
     const DESCRIPTION_POPUP = document.querySelector('#description');
     const AGE_POPUP = document.querySelector('#age');
@@ -32,10 +33,9 @@ export default function popup() {
             return pet;
         })
 
-        // console.log(IMG_POPUP);
-
         IMG_POPUP.src = pet.img;
         NAME_POPUP.innerHTML = pet.name;
+        TYPE_POPUP.innerHTML = pet.type;
         BREED_POPUP.innerHTML = pet.breed;
         DESCRIPTION_POPUP.innerHTML = pet.description;
         AGE_POPUP.innerHTML = pet.age;
