@@ -1,0 +1,243 @@
+@import'../../assets/scss/_fonts';
+@import'../../assets/scss/_variables';
+@import'../../assets/scss/_normalize';
+@import'../../assets/scss/_global';
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    background-image: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 100%);
+    z-index: 3;
+
+    &__logo-title {
+        color: $color-text-title;
+    }
+
+    &__logo-subtitle {
+        color: $color-dark;
+    }
+
+    @media (max-width: 767px) {
+        padding: 30px 43px 30px 0;
+    }
+}
+
+.nav {
+    &__logo-title {
+        color: $color-bg-btn-normal !important;
+    }
+
+    &__logo-subtitle {
+        color: $color-white;
+    }
+
+    &__link {
+        color: $color-text-title;
+
+        &:hover {
+            color: #000000;
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__link {
+            color: $color-gray-normal;
+
+            &:hover {
+                color: $color-gray-hover_modal-card;
+            }
+        }
+    }
+}
+
+.second {
+    color: #000000;
+    border-bottom: 3px solid $color-bg-btn-normal;
+
+    @media (max-width: 767px) {
+        color: $color-gray-hover_modal-card;
+    }
+}
+
+.pets.section {
+    @media (max-width: 1220px) {
+        padding-bottom: 76px;
+    }
+
+    @media (max-width: 657px) {
+        padding-bottom: 42px;
+    }
+}
+
+.pets {
+    margin-top: 120.19px;
+
+    &__buttons {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    &__btn-dir {
+        padding: 24px;
+        background-color: transparent;
+
+        &_left-steps, &_left, &_right, &_right-steps {
+            position: relative;
+            z-index: 0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-repeat: no-repeat;
+                height: 23px;
+                top: 42.20%;
+            }
+        }
+
+        &_left-steps {
+            &::before {
+                background-image: url('../../assets/icons/left-steps.svg');
+                width: 27px;
+                left: 22.54%;
+            }
+        }
+
+        &_left {
+            margin-left: 20px;
+            &::before {
+                background-image: url('../../assets/icons/left.svg');
+                width: 13px;
+                left: 38.54%;
+            }
+        }
+
+        &_current {
+            @include flex-container;
+            width: 32px;
+            height: 32px;
+            font-size: 20px;
+            background-color: $color-bg-btn-normal;
+            margin: 0 20px;
+
+            &:hover {
+                background-color: $color-bg-btn-normal;
+                border: 2px solid $color-bg-btn-normal;
+                cursor: default;
+            }
+        }
+
+        &_right {
+            margin-right: 20px;
+            &::before {
+                background-image: url('../../assets/icons/right.svg');
+                width: 13px;
+                left: 38.54%;
+            }
+        }
+
+        &_right-steps {
+            &::before {
+                background-image: url('../../assets/icons/right-steps.svg');
+                width: 27px;
+                left: 22.54%;
+            }
+        }
+
+        &__icon {
+            position: absolute;
+            top: auto;
+            left: auto;
+        }
+    }
+
+    @media (max-width: 1220px) {
+        &__title {
+            padding-bottom: 30px;
+        }
+        
+        &__buttons {
+            margin-top: 12px;
+        }
+    }
+
+    @media (max-width: 657px) {
+        &__title {
+            padding-bottom: 42px;
+        }
+
+        &__buttons {
+            margin-top: 13px;
+        }
+
+        &__btn-dir {
+            &_left {
+                margin-left: 10px;
+            }
+    
+            &_current {
+                margin: 0 10px;
+            }
+    
+            &_right {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.wrapper {
+    width: 1200px;
+    height: 928px;
+    overflow: hidden;
+
+    &__pagination {
+        @include flex-container($jus: space-around);
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 40px;
+    }
+
+    &__item {
+      
+    }
+
+    // @media (max-width: 1220px) {
+    //     @include flex-container($jus: space-around);
+    //     &__item {
+    //         margin: 0 5px 30px;
+    //     }
+    // }
+
+    // @media (max-width: 1179px) {
+    //     &__item {
+    //         &_item7, &_item8  {
+    //             display: none;
+    //         }
+    //     }
+    // }
+
+    // @media (max-width: 1060px) {
+    //     padding: 0 6.1% 0;
+    // }
+
+    // @media (max-width: 657px) {
+    //     &__item {
+    //         &_item4, &_item5, &_item6   {
+    //             display: none;
+    //         }
+    //     }
+    // }
+}
+
+button[data-disabled] {
+    border: 2px solid $color-gray-normal;
+    cursor: default;
+
+    &:hover {
+        border: 2px solid $color-gray-normal;
+        background-color: transparent;
+    }
+}

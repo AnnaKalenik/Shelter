@@ -1,0 +1,46 @@
+//color variables
+$color-white: #FFFFFF;
+$color-dark: #292929;
+$color-gray-normal: #CDCDCD;
+$color-gray-hover_modal-card: #FAFAFA;
+
+$color-text-title: #545454;
+$color-text-paragraph: #4C4C4C;
+$color-text-legal-inform: #B2B2B2;
+
+$color-bg-section-dark: #211F20;
+
+$color-bg-section: #F6F6F6;
+$color-bg-btn-normal: #F1CDB3;
+$color-bg-btn-hover: #FDDCC4;
+$color-bg-btn-active: #F1CDB3;
+
+$color-text-modal-black: #000000;
+$color-bg-modal-around: rgba(41, 41, 41, 0.6);
+
+
+//mixins
+@mixin font-arial($size: 15px) {
+    font:  400 $size 'Arial', sans-serif;
+}
+
+@mixin style-title($size: 35px, $color: #{$color-text-title}, $pad: 60px) {
+    font-size: $size;
+    color: $color;
+    line-height: 130%;
+    padding-bottom: $pad;
+}
+
+@mixin flex-container($dir: row, $jus: center, $ali: center) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $ali;
+}
+
+%footer-contacts-style {
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-bg-btn-normal;
+}
